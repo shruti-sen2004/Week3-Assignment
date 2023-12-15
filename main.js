@@ -88,7 +88,8 @@ const handleReset = () => {
   startButton.classList.remove('hidden');
   resetButton.classList.add('hidden');
   doneButton.classList.add('hidden');
-  last.classList.remove('hidden');
+  last.classList.add('hidden');
+  counter.classList.add('hidden');
 };
 
 
