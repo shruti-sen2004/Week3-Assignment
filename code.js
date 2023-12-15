@@ -27,15 +27,19 @@ const maxNumber = findMaxNumber([10, 5, 8, 20, 3]);
 console.log(maxNumber); //* Output: 20
 
 //? Problem 3
-function filterOddNumbers(a){
+function filterOddNumbers(a) {
     let i=0;
     let new_a=[]
     for(i; i< a.length; i++) {
         if (a[i]%2 !=0){
             new_a.push(a[i])
+        }
     }
     return new_a
 }
+const oddNumbers = filterOddNumbers([1, 2, 3, 4, 5]);
+
+console.log(oddNumbers);
 const oddNumbers = filterOddNumbers([1, 2, 3, 4, 5]);
 
 console.log(oddNumbers); //* Output: [1, 3, 5]
