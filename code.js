@@ -39,9 +39,6 @@ function filterOddNumbers(a) {
 }
 const oddNumbers = filterOddNumbers([1, 2, 3, 4, 5]);
 
-console.log(oddNumbers);
-const oddNumbers = filterOddNumbers([1, 2, 3, 4, 5]);
-
 console.log(oddNumbers); //* Output: [1, 3, 5]
 
 //? Problem 4
