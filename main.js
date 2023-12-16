@@ -56,18 +56,20 @@ const handleStart = () => {
     //* Card click event
     
     cardElement.addEventListener('click', () => {
-      console.log(item.word);
-      cardElement.classList.add('border-red-500');
-      cardElement.innerText = item.meaning;
-      clickedFlashcards.push(item);
-      
-      if (counterval > 0) {
-        counterval--;
+      if(!clickedFlashcards.includes(item)){
+        console.log(item.word);
+        cardElement.classList.add('border-red-500');
+        cardElement.innerText = item.meaning;
+        clickedFlashcards.push(item);
         
-        document.getElementById('counter-val').innerText = counterval;
-    }
-    let incorrect = 10- counterval;
-    document.getElementById('incorrect').innerText = incorrect;
+        if (counterval > 0) {
+          counterval--;
+          
+          document.getElementById('counter-val').innerText = counterval;
+        }
+        let incorrect = 10- counterval;
+        document.getElementById('incorrect').innerText = incorrect;
+      }
     });  
   });
   
